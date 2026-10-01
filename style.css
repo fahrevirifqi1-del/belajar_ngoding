@@ -7,10 +7,11 @@
 
 body {
     background: linear-gradient(135deg, #1e3c72, #2a5298);
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px 0;
 }
 
 .weather-card {
@@ -119,4 +120,55 @@ body {
 .col span {
     font-size: 10px;
     color: rgba(255, 255, 255, 0.7);
+}
+
+/* === GAYA BARU: Section Prakiraan Cuaca 5 Hari === */
+.forecast-section {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: left;
+}
+
+.forecast-title {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: rgba(255, 255, 255, 0.9);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.forecast-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.forecast-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 8px 14px;
+    border-radius: 12px;
+    font-size: 13px;
+}
+
+.forecast-day {
+    font-weight: 500;
+    width: 70px;
+}
+
+.forecast-icon {
+    font-size: 16px;
+    color: #ffeb3b;
+    text-align: center;
+    width: 30px;
+}
+
+.forecast-temp {
+    font-weight: 600;
+    text-align: right;
+    width: 70px;
 }
